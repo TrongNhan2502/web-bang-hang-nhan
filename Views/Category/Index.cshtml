@@ -1,0 +1,329 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<header class="section-header">
+    <section class="header-main border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-3 col-md-12">
+                    <a href="https://localhost:44345" class="brand-wrap">
+                        <img class="logo" src="~/Content/images/logo.png">
+                    </a> <!-- brand-wrap.// -->
+                </div>
+                <div class="col-xl-6 col-lg-5 col-md-6">
+                    <form action="#" class="search-header">
+                        <div class="input-group w-100">
+                            <select class="custom-select border-right" name="category_name">
+                                <option value="">All type</option>
+                                <option value="codex">Special</option>
+                                <option value="comments">Only best</option>
+                                <option value="content">Latest</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="Search">
+
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fa fa-search"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                    </form> <!-- search-wrap .end// -->
+                </div> <!-- col.// -->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="widgets-wrap float-md-right">
+                        <div class="widget-header mr-3">
+                            <a href="https://localhost:44345/Login/User" class="widget-view">
+                                <div class="icon-area">
+                                    <i class="fa fa-user"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                    </svg>
+                                    <span class="notify">2</span>
+                                </div>
+                                <small class="text"> Đăng nhập </small>
+                            </a>
+                        </div>
+                        <div class="widget-header mr-3">
+                            <a href="https://localhost:44345/Register/User" class="widget-view">
+                                <div class="icon-area">
+                                    <i class="fa fa-comment-dots"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+                                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                        <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z" />
+                                    </svg>
+                                    <span class="notify">3</span>
+                                </div>
+                                <small class="text"> Đăng ký </small>
+                            </a>
+                        </div>
+                        <div class="widget-header mr-3">
+                            <a href="https://localhost:44345/Grid/Listing" class="widget-view">
+                                <div class="icon-area">
+                                    <i class="fa fa-store"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                                        <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+                                    </svg>
+                                </div>
+                                <small class="text"> Đặt hàng </small>
+                            </a>
+                        </div>
+                        <div class="widget-header">
+                            <a href="https://localhost:44345/Cart/Shopping" class="widget-view">
+                                <div class="icon-area">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z" />
+                                    </svg>
+                                    <span class="notify">3</span>
+                                    <i class="fa fa-shopping-cart"></i>
+                                </div>
+                                <small class="text"> Giỏ hàng </small>
+                            </a>
+                        </div>
+                    </div> <!-- widgets-wrap.// -->
+                </div> <!-- col.// -->
+            </div> <!-- row.// -->
+        </div> <!-- container.// -->
+    </section> <!-- header-main .// -->
+
+    <nav class="navbar navbar-main navbar-expand-lg border-bottom">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-bars text-muted mr-2"></i> Categories </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Machinery</a>
+                            <a class="dropdown-item" href="#">Electronics</a>
+                            <a class="dropdown-item" href="#">Home textile</a>
+                            <a class="dropdown-item" href="#">Home and kitchen</a>
+                            <a class="dropdown-item" href="#">Service and equipment</a>
+                            <a class="dropdown-item" href="#">Healthcare items</a>
+                            <a class="dropdown-item" href="#">Toys and Hobbies</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ready to ship</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trade shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sell with us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Demo pages</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="page-index.html">Main</a>
+                            <a class="dropdown-item" href="page-category.html">All category</a>
+                            <a class="dropdown-item" href="page-listing-large.html">Listing list</a>
+                            <a class="dropdown-item" href="page-listing-grid.html">Listing grid</a>
+                            <a class="dropdown-item" href="page-shopping-cart.html">Shopping cart</a>
+                            <a class="dropdown-item" href="page-detail-product.html">Item detail</a>
+                            <a class="dropdown-item" href="page-content.html">Info content</a>
+                            <a class="dropdown-item" href="page-user-login.html">Page login</a>
+                            <a class="dropdown-item" href="page-user-register.html">Page register</a>
+                            <a class="dropdown-item disabled text-muted" href="#">More components</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-md-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Get the app</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown">English</a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">Russian</a>
+                            <a class="dropdown-item" href="#">French</a>
+                            <a class="dropdown-item" href="#">Spanish</a>
+                            <a class="dropdown-item" href="#">Chinese</a>
+                        </div>
+                    </li>
+                </ul>
+            </div> <!-- collapse .// -->
+        </div> <!-- container .// -->
+    </nav>
+</header> <!-- section-header.// -->
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content padding-y">
+    <div class="container">
+
+        <nav class="row">
+            <div class="col-md-3">
+
+                <div class="card card-category">
+                    <div class="img-wrap" style="background: #ffd7d7">
+                        <img src="~/Content/images/items/1.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="#">Summer shirts</a></h4>
+                        <ul class="list-menu">
+                            <li><a href="">Unisex T shirts</a></li>
+                            <li><a href="">Casual shirts</a></li>
+                            <li><a href="">Scherf Ice cream</a></li>
+                            <li><a href="">Another category</a></li>
+                            <li><a href="">Great items name</a></li>
+                            <li><a href="">Great items name</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- col.// -->
+            <div class="col-md-3">
+                <div class="card card-category">
+                    <div class="img-wrap" style="background: #FFF68D">
+                        <img src="~/Content/images/items/2.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="#">Winter jackets</a></h4>
+                        <ul class="list-menu">
+                            <li><a href="">Leather jackets</a></li>
+                            <li><a href="">Men's jackets</a></li>
+                            <li><a href="">Heating battery clothes</a></li>
+                            <li><a href="">Jeans jackets</a></li>
+                            <li><a href="">Great items name</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- col.// -->
+            <div class="col-md-3">
+                <div class="card card-category">
+                    <div class="img-wrap" style="background: #bcffb8">
+                        <img src="~/Content/images/items/3.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="#">Shorts</a></h4>
+                        <ul class="list-menu">
+                            <li><a href="">Jeans shorts</a></li>
+                            <li><a href="">Swimming shorts</a></li>
+                            <li><a href="">Another some shorts</a></li>
+                            <li><a href="">Another category</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- col.// -->
+            <div class="col-md-3">
+                <div class="card card-category">
+                    <div class="img-wrap" style="background: #c9fff3">
+                        <img src="~/Content/images/items/4.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="#">Travel bags </a></h4>
+                        <ul class="list-menu">
+                            <li><a href="">Leather bags</a></li>
+                            <li><a href="">Cook & Hold ovens</a></li>
+                            <li><a href="">Scherf Ice cream</a></li>
+                            <li><a href="">Another category</a></li>
+                            <li><a href="">Great items name</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- col.// -->
+            <div class="col-md-3">
+                <div class="card card-category">
+                    <a href="#" class="img-wrap" style="background: #ddffeb">
+                        <img src="~/Content/images/items/5.jpg">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="#">Great items</a></h4>
+                        <ul class="list-menu">
+                            <li><a href="">Combi steamers</a></li>
+                            <li><a href="">Cook & Hold ovens</a></li>
+                            <li><a href="">Scherf Ice cream</a></li>
+                            <li><a href="">Another category</a></li>
+                            <li><a href="">Great items name</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- col.// -->
+            <div class="col-md-3">
+                <div class="card card-category">
+                    <a href="#" class="img-wrap" style="background: #dee4ff">
+                        <img src="~/Content/images/items/6.jpg">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="#">Kitchen furniture</a></h4>
+                        <ul class="list-menu">
+                            <li><a href="">Combi steamers</a></li>
+                            <li><a href="">Cook & Hold ovens</a></li>
+                            <li><a href="">Scherf Ice cream</a></li>
+                            <li><a href="">Another category</a></li>
+                            <li><a href="">Great items name</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- col.// -->
+            <div class="col-md-3">
+                <div class="card card-category">
+                    <a href="#" class="img-wrap" style="background: #ddffeb">
+                        <img src="~/Content/images/items/2.jpg">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="#">Great items</a></h4>
+                        <ul class="list-menu">
+                            <li><a href="">Combi steamers</a></li>
+                            <li><a href="">Cook & Hold ovens</a></li>
+                            <li><a href="">Scherf Ice cream</a></li>
+                            <li><a href="">Another category</a></li>
+                            <li><a href="">Great items name</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- col.// -->
+            <div class="col-md-3">
+                <div class="card card-category">
+                    <a href="#" class="img-wrap" style="background: #dee4ff">
+                        <img src="~/Content/images/items/1.jpg">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title"><a href="#">Other clothes</a></h4>
+                        <ul class="list-menu">
+                            <li><a href="">Jeans shorts</a></li>
+                            <li><a href="">Cook & Hold ovens</a></li>
+                            <li><a href="">Scherf Ice cream</a></li>
+                            <li><a href="">Another category</a></li>
+                            <li><a href="">Great items name</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- col.// -->
+        </nav> <!-- row.// -->
+
+
+    </div> <!-- container .//  -->
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+<!-- ========================= SECTION SUBSCRIBE  ========================= -->
+<section class="padding-y-lg bg-light border-top">
+    <div class="container">
+
+        <p class="pb-2 text-center">Delivering the latest product trends and industry news straight to your inbox</p>
+
+        <div class="row justify-content-md-center">
+            <div class="col-lg-4 col-sm-6">
+                <form class="form-row">
+                    <div class="col-8">
+                        <input class="form-control" placeholder="Your Email" type="email">
+                    </div> <!-- col.// -->
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-block btn-warning"> <i class="fa fa-envelope"></i> Subscribe </button>
+                    </div> <!-- col.// -->
+                </form>
+                <small class="form-text">We’ll never share your email address with a third-party. </small>
+            </div> <!-- col-md-6.// -->
+        </div>
+
+
+    </div>
+</section>
+<!-- ========================= SECTION SUBSCRIBE END// ========================= -->
+<!-- ========================= FOOTER ========================= -->
+<footer class="section-footer bg-secondary">
